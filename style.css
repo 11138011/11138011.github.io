@@ -1,1 +1,22 @@
 
+
+body{
+	background-image: url("../security-4700815_960_720.jpg")
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+}
+ul li{
+	
+	display: inline;margin-left: 15px;
+}
+a {
+	text-decoration: none;font-weight: 400;font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";font-size: 32px
+}
+a: hover{
+	color: #f00}
+
