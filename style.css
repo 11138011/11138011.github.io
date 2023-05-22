@@ -1,23 +1,38 @@
+<span class="image-scope">
+  <style scoped>
+    /* fall-back styles for browsers without media query support (IE6-8) */
+    #road {
+      background-image: url('road.jpg');
+      height: 681px;
+      width: 1024px;
+    }
 
-* CSS Document */
+    /* small image for mobile */
+    @media (min-width: 0px) {
+      #road {
+        background-image: url('road-small.jpg');
+        height: 213px;
+        width: 320px;
+      }
+    }
 
-body{
-	background-color: green;
-	img-align: center;
-}
-h1{
-	text-transform: uppercase;
-	text-align: center;
-	background-color: red;
-	color: white;
-	font-family: Arial;
-}
-ul li{
-	
-	display: inline;center: 15px;
-}
-a {
-	text-decoration: none;font-weight: 400;font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";font-size: 32px
-}
-a: hover{
-	color: #f00}
+    /* medium image for tablets */
+    @media (min-width: 640px) {
+      #road {
+        background-image: url('road-medium.jpg');
+        height: 426px;
+        width: 640px;
+      }
+    }
+
+    /* large image for desktop */
+    @media (min-width: 1024px) {
+      #road {
+        background-image: url('road.jpg');
+        height: 681px;
+        width: 1024px;
+      }
+    }
+  </style>
+  <span id="road" class="image" role="img" aria-label="A road in Sweden during winter."></span>
+</span>
